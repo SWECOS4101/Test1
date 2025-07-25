@@ -51,3 +51,36 @@
     - นักศึกษา CS ต้องการ roadmap ที่เข้าใจง่าย
     - นักศึกษา CS ต้องการข้อมูลวิชาเรียนที่ชัดเจน
     - อาจารย์ต้องการให้ข้อมูลวิชาเรียนที่ถูกต้องและเป็นปัจจุบัน
+
+
+# ภาพรวมเส้นทางของ สร้าง website เเนะนำเเนวทางการลงทะเบียนเรียนสำหรับ CS Students
+
+```mermaid
+graph LR
+    A[./ - Home] --> B(About)
+    A --> C(Contact)
+        C --> C1(Form)
+        C --> C2(Location)
+    A --> D(Products)
+        D --> D1(Category A)
+            D1 --> D1a(Product 1)
+            D1 --> D1b(Product 2)
+        D --> D2(Category B)
+            D2 --> D2a(Product 3)
+    A --> E(Blog)
+        E --> E1(Post Title 1)
+        E --> E2(Post Title 2)
+    A --> F(Settings)
+        F --> F1(Notification)
+        F --> F2(Account)
+            F2 --> F2a(Profile)
+            F2 --> F2b(Password)
+        F --> F3(Privacy)
+```
+
+## หมายเหตุ
+  - รอการเเก้ไข เเละตัวอย่างการใช้งาน
+  - [ ] Task item description
+  - [x] Completed task item description
+
+
