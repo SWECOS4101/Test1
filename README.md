@@ -1,4 +1,6 @@
-# Mini Project Cos4101 SWE(Software Engineering)
+# SDLC 
+- ## **Planning and Requirements**
+## Mini Project Cos4101 SWE(Software Engineering)
 
 ## Objective
 สร้าง website เเนะนำเเนวทางการลงทะเบียนเรียนสำหรับ CS Students
@@ -84,3 +86,28 @@ graph LR
   - [x] Completed task item description
 
 
+- ## **Analysis Model**
+  - **Use Case Diagram**:
+    - สร้าง Use Case Diagram เพื่อแสดงความสัมพันธ์ระหว่างนักศึกษา CS, อาจารย์ และ website
+  - **Class Diagram**:
+    - สร้าง Class Diagram เพื่อแสดงโครงสร้างของ website และข้อมูลที่เกี่ยวข้อง
+  - **Sequence Diagram**:
+    - สร้าง Sequence Diagram เพื่อแสดงลำดับการทำงานของ website
+  - **State Diagram**:
+    - สร้าง State Diagram เพื่อแสดงสถานะต่างๆ ของ website
+  - **Activity Diagram**:
+    - สร้าง Activity Diagram เพื่อแสดงกระบวนการทำงานของ website
+  - **Data Flow Diagram**:
+    - สร้าง Data Flow Diagram เพื่อแสดงการไหลของข้อมูลภายใน website
+
+- **Design**
+  - **Architectural Design**:
+    - กำหนดสถาปัตยกรรมของ website เช่น การใช้ MVC (Model-View-Controller) หรือ Microservices
+  - **User Interface Design**:
+    - ออกแบบ UI ของ website ให้ใช้งานง่ายและเข้าถึงข้อมูลได้สะดวก
+  - **Database Design**:
+    - ออกแบบฐานข้อมูลเพื่อเก็บข้อมูลวิชาเรียน, roadmap, และข้อมูลอื่นๆ ที่เกี่ยวข้อง
+  - **Component Design**:
+    - กำหนดส่วนประกอบต่างๆ ของ website เช่น โมดูลสำหรับการแสดง roadmap, โมดูลสำหรับการแสดงข้อมูลวิชาเรียน
+  - **Interface Design**:
+    - กำหนดอินเตอร์เฟสระหว่างส่วนประกอบต่างๆ ของ website เช่น อินเตอร์เฟสระหว่างโมดูลการแสดง roadmap และโมดูลการแสดงข้อมูลวิชาเรียน
