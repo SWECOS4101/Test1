@@ -111,3 +111,27 @@ graph LR
     - กำหนดส่วนประกอบต่างๆ ของ website เช่น โมดูลสำหรับการแสดง roadmap, โมดูลสำหรับการแสดงข้อมูลวิชาเรียน
   - **Interface Design**:
     - กำหนดอินเตอร์เฟสระหว่างส่วนประกอบต่างๆ ของ website เช่น อินเตอร์เฟสระหว่างโมดูลการแสดง roadmap และโมดูลการแสดงข้อมูลวิชาเรียน
+  
+
+## ตัวอย่าง Flow-Oriented Model
+
+- context diagram level 0
+```mermaid
+graph LR
+    A[User] -->|Request Roadmap| B[Roadmap Service]
+    A -->|Request Course Info| C[Course Info Service]
+    B -->|Return Roadmap| A
+    C -->|Return Course Info| A
+```
+- data flow diagram level 1
+```mermaid
+graph LR
+    A[User] -->|Request Roadmap| B[Roadmap Service]
+    A -->|Request Course Info| C[Course Info Service]
+    B -->|Return Roadmap| A
+    C -->|Return Course Info| A
+    B --> D[Database]
+    C --> D
+    D --> B
+    D --> C
+```
