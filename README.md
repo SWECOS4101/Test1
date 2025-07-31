@@ -118,20 +118,29 @@ graph LR
 - context diagram level 0
 ```mermaid
 graph LR
-    A[User] -->|Request Roadmap| B[Roadmap Service]
-    A -->|Request Course Info| C[Course Info Service]
-    B -->|Return Roadmap| A
-    C -->|Return Course Info| A
+      user[User] -->|Request Roadmap| system((Roadmap Service))
+      user -->|Request Course Info| system((Course Info Service))
+      system((System Process)) -->|Return Roadmap| user
+      system((System Process)) -->|Return Course Info| user
+      subgraph My Bounding Box [System Process]
+          system((System Process))
+      end
+      
 ```
 - data flow diagram level 1
 ```mermaid
 graph LR
-    A[User] -->|Request Roadmap| B[Roadmap Service]
-    A -->|Request Course Info| C[Course Info Service]
-    B -->|Return Roadmap| A
-    C -->|Return Course Info| A
-    B --> D[Database]
-    C --> D
-    D --> B
-    D --> C
+    user[User] -->|Request Roadmap| process_roadmap((Roadmap Service))
+    user -->|Request Course Info| process_course((Course Info Service))
+    process_roadmap -->|Return Roadmap| user
+    process_course -->|Return Course Info| user
+    process_roadmap --> data_store[(Database)]
+    process_course --> data_store
+    data_store --> process_roadmap
+    data_store --> process_course
+    subgraph My Bounding Box [System Process]
+        process_roadmap((Roadmap Service))
+        process_course((Course Info Service))
+        data_store[(Database)]
+    end
 ```
